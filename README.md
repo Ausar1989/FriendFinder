@@ -6,7 +6,7 @@ This is an image of the homepage:
 ![friend](images/Friend1.png)
 
 This is an image of the questionnaire for best dating suggestion:
-![friend2](images/Frined2.png)
+![friend2](images/Friend2.png)
 
 This is an image of the header in the survey section of the website:
 ![friend3](images/Friend3.png)
