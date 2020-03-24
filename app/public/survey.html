@@ -141,7 +141,7 @@
                 }
                 if (validateForm() === true) {
                    var userInput ={
-                       name: $("#name").val(),
+                       name: $("#name").val().trim(),
                        photo: $("#photo").val(),
                        scores: [
                            $("#q1").val(),
@@ -153,14 +153,15 @@
                    };
                    var currentURL = window.location.origin;
                    
-                   $.post(currentURL + "/api/friends", userInput, function(data) {
+                   $.post(currentURL + "/api/friends", userInput).then (function(data) {
+                       console.log(data);
+                       If (data); {
                        $("#matchName").text(data.name);
                        $("#matchImg").attr("src", data.photo);
                        $("#results-Modal").modal("toggle");
+                       };
                     });
-                }else {
-                    alert("Please fill out all fields before submitting")
-                };
+                }
             });
             
             </script>
